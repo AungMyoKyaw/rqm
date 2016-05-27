@@ -1,0 +1,41 @@
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+h1 {
+  text-align: center;
+  color: #44AF28;
+  font-family: san-serif; }
+
+p, p.credit, input {
+  text-align: center;
+  color: #1980C6;
+  font-size: 1.5em;
+  font-weight: bold; }
+  p#quote, input#quote {
+    font-weight: bolder; }
+
+p.credit, input.credit {
+  font-variant: small-caps;
+  font-size: 1em; }
+
+input {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: .3em;
+  padding: .5em;
+  border: solid;
+  background-color: transparent;
+  border-color: green;
+  border-width: .2em;
+  color: green;
+  font-size: 1.1em;
+  border-radius: .4em;
+  cursor: pointer; }
