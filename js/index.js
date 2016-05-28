@@ -1,4 +1,4 @@
-jQuery(document).ready(function($) {
+$(document).ready(function() {
 	var errorMessage={message:"Unable to get data !  Please Try Again !",by:"Aung Myo Kyaw"};
 	function getQuote(){
 		$.ajax({

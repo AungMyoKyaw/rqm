@@ -12,6 +12,8 @@ h1 {
   text-align: center;
   color: #44AF28;
   font-family: san-serif; }
+  h1 a {
+    text-decoration: none; }
 
 p, p.credit, input {
   text-align: center;
@@ -41,3 +43,5 @@ input {
   cursor: pointer; }
   input:focus {
     outline: none; }
+  input:hover {
+    border-color: red; }
