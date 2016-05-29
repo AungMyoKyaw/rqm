@@ -45,3 +45,13 @@ input {
     outline: none; }
   input:hover {
     border-color: red; }
+
+a.folkme {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border: 0; }
+  @media only screen and (min-width: 64.0625em) and (max-width: 90em) {
+    a.folkme {
+      display: inline-block; } }
