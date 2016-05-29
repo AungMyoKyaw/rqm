@@ -52,6 +52,6 @@ a.folkme {
   top: 0;
   left: 0;
   border: 0; }
-  @media only screen and (min-width: 64.0625em) and (max-width: 90em) {
+  @media only screen and (min-width: 64.0625em) {
     a.folkme {
       display: inline-block; } }

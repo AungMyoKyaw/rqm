@@ -47,7 +47,7 @@ input{
 	}
 }
 a.folkme{
-	@include show(large-only,inline-block);
+	@include show(large-up,inline-block);
 	position: fixed;
 	top:0;
 	left:0;
