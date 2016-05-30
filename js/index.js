@@ -9,6 +9,10 @@ $(document).ready(function() {
 				$("#quote").html('"'+data.quote+'"');
 				$("#author").html(data.author);
 				$("a.twitter-share-button").attr("data-text",data.quote);
+				$("#quote,#author").addClass('animated bounceInLeft');
+				$("#quote,#author").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+					$("#quote,#author").removeClass('animated bounceInLeft');
+				});
 			},
 			error:function(error){
 				$("#quote").html(errorMessage.message);
