@@ -2,11 +2,11 @@ $(document).ready(function() {
 	var errorMessage={message:"Unable to get data !  Please Try Again !",by:"Aung Myo Kyaw"};
 	function getQuote(){
 		$.ajax({
-			url:'https://andruxnet-random-famous-quotes.p.mashape.com/',
-			type:'POST',
+			url:'https://api.quotable.io/random',
+			type:'GET',
 			dataType:'json',
 			success:function(data){
-				$("#quote").html('"'+data.quote+'"');
+				$("#quote").html('"'+data.content+'"');
 				$("#author").html(data.author);
 				$("a.twitter-share-button").attr("data-text",data.quote);
 				$("#quote,#author").addClass('animated bounceInLeft');
@@ -17,9 +17,6 @@ $(document).ready(function() {
 			error:function(error){
 				$("#quote").html(errorMessage.message);
 				$("#author").html(errorMessage.by);
-			},
-			beforeSend:function(xhr){
-				xhr.setRequestHeader("X-Mashape-Authorization", "PSKgJRegHBmsh1A157uuoGMhkUpxp1hW4VQjsn5BUUBMMF18AH");
 			}
 		});
 	}
